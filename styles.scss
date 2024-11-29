@@ -1,0 +1,85 @@
+$green: hsl(75, 94%, 57%);
+$white: hsl(0, 0%, 100%);
+$grey-700: hsl(0, 0%, 20%);
+$grey-800: hsl(0, 0%, 12%);
+$grey-900: hsl(0, 0%, 8%);
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("./assets/fonts/static/Inter-Bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("./assets/fonts/static/Inter-Regular.ttf")
+      format("truetype");
+  }
+
+  @font-face {
+    font-family: "Inter-SemiBold";
+    src: url("./assets/fonts/static/Inter-SemiBold.ttf")
+      format("truetype");
+  }
+* {
+    margin: 0;
+    padding: 0;
+  } 
+body {
+  background: $grey-900;
+  color: $white;
+  font-family: "Inter-SemiBold";
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+  main {
+    background: $grey-800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 30px;
+    img {
+      width: 5dvw;
+      min-width: 120px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+    #location{
+        margin-bottom: 20px;
+        color: $green;
+    }
+    #proffesion{
+        font-family: "Inter-Regular";
+        margin-bottom: 10px;
+    }
+    ul {
+      display: flex;
+        flex-direction: column;
+        width: 100%;
+      li {
+        font-family: "Inter-Bold";
+        text-align: center;
+        flex-grow: 1;
+        background: $grey-700;
+        list-style: none;
+        margin: 10px 0;
+        padding: 15px 0;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover{
+            cursor: pointer;
+            background: $green;
+            color: $grey-800;
+        }
+      }
+    }
+  }
+}
