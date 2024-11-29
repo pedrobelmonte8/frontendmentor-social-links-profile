@@ -79,6 +79,10 @@ body {
             background: $green;
             color: $grey-800;
         }
+        &:focus{
+          background: $green;
+          color: $grey-800;
+      }
       }
     }
   }
